@@ -65,7 +65,7 @@ h1 {
     padding: 25px;
 }
 
-.answers {
+#answerA {
     background: linear-gradient(198deg, #067ada, #04162b, #265ea8);
     text-align: left;
     font-size: 25px;
@@ -75,6 +75,66 @@ h1 {
     border: solid white;
     border-radius: 50px;
     margin-right: 40px;
+}
+
+#answerA:hover {
+    background: linear-gradient(198deg, #e5ca80, #e54308, #e0a45f);
+    font-size: 25px;
+    color: rgb(235, 235, 220);
+}
+
+#answerB {
+    background: linear-gradient(198deg, #067ada, #04162b, #265ea8);
+    text-align: left;
+    font-size: 25px;
+    color: rgb(235, 235, 220);
+    padding: 18px 20px;
+    width: 480px;
+    border: solid white;
+    border-radius: 50px;
+    margin-right: 40px;
+}
+
+#answerB:hover {
+    background: linear-gradient(198deg, #e5ca80, #e54308, #e0a45f);
+    font-size: 25px;
+    color: rgb(235, 235, 220);
+}
+
+#answerC {
+    background: linear-gradient(198deg, #067ada, #04162b, #265ea8);
+    text-align: left;
+    font-size: 25px;
+    color: rgb(235, 235, 220);
+    padding: 18px 20px;
+    width: 480px;
+    border: solid white;
+    border-radius: 50px;
+    margin-right: 40px;
+}
+
+#answerC:hover {
+    background: linear-gradient(198deg, #e5ca80, #e54308, #e0a45f);
+    font-size: 25px;
+    color: rgb(235, 235, 220);
+}
+
+#answerD {
+    background: linear-gradient(198deg, #067ada, #04162b, #265ea8);
+    text-align: left;
+    font-size: 25px;
+    color: rgb(235, 235, 220);
+    padding: 18px 20px;
+    width: 480px;
+    border: solid white;
+    border-radius: 50px;
+    margin-right: 40px;
+}
+
+#answerD:hover {
+    background: linear-gradient(198deg, #e5ca80, #e54308, #e0a45f);
+    font-size: 25px;
+    color: rgb(235, 235, 220);
 }
 
 .right {
@@ -113,8 +173,15 @@ h1 {
     color: white;
 } 
 
-.finalWinnings {
+#finalWinnings {
     font-size: 30px;
     color: gold;
+}
+
+#scoring {
+    font-family: "Patua One", serif;
+    font-size: 20px;
+    color: gold;
+    margin: 10px;
 }
 

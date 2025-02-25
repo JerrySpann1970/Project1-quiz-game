@@ -48,11 +48,12 @@ let count = 0
 let currentQuestion;
 let finalWinnings
 let potentialWinnings
-let guarenteedWinnings
+let guarenteedWinnings = 0
 
 /*------------------------ Cached Element References ------------------------*/
 
 let scoreDisplay = document.getElementById('finalWinnings');
+let winningsDisplay = document.getElementById('scoring')
 const question = document.querySelector('#questionContainer p');
 const answersA = document.getElementById('answerA');
 const answersB = document.getElementById('answerB');
@@ -86,14 +87,25 @@ function handleChoice(event) {
     if (choice == correctAnswer) {
         score = winnings[count]
         count++;
-        console.log(count)
-        scoreDisplay.innerHTML = `Game Over. Final Winnings ${score}`
+        winningsDisplay.innerHTML = `Winnings: $${score}`
+       
+
         nextQuestion()
 
     }
     else {
         wrongAnswer.play();
-        
+        //Checks to see if player reaches winning threshold
+        if (score === 1000) {
+            guarenteedWinnings = 1000
+        }
+        else if (score === 32000) {
+            guarenteedWinnings = 32000
+        } else {
+            guarenteedWinnings = 1000000
+        };
+        //Displays final score after game ends
+        scoreDisplay.innerHTML = `Game Over. Final Winnings $${guarenteedWinnings}`    
     }
 }
 
