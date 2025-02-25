@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; 
     font-family: "Poppins", sans-serif;
 }
 
@@ -111,4 +111,10 @@ h1 {
     margin: 5px 0px;
     font-size: 20px;
     color: white;
+} 
+
+.finalWinnings {
+    font-size: 30px;
+    color: gold;
 }
+
