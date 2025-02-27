@@ -82,7 +82,7 @@ const testQuestions = [
     },
 
     {
-        question: "Which of the following gasses do plants absorb from the atmosphere?",
+        question: 'Which of the following gasses do plants absorb from the atmosphere?',
 
         a: 'A: Oxygen',
         b: 'B: Nitrogen',
@@ -104,7 +104,7 @@ const testQuestions = [
     },
 
     {
-        question: "What is the most eaten food in the world?",
+        question: 'What is the most eaten food in the world?',
 
         a: 'A: Chicken',
         b: 'B: Beef',
@@ -126,7 +126,7 @@ const testQuestions = [
     },
 
     {
-        question: "According to Greek mythology who was the first woman on earth?",
+        question: 'According to Greek mythology who was the first woman on earth?',
 
         a: 'A: Eve',
         b: 'B: Pandora',
@@ -137,7 +137,7 @@ const testQuestions = [
     },
 
     {
-        question: "What is the longest river in the world?",
+        question: 'What is the longest river in the world?',
 
         a: 'A: Mississippi',
         b: 'B: Trinity',
@@ -148,7 +148,7 @@ const testQuestions = [
     },
 
     {
-        question: "f you were planning on making a pizza, what is the most common Italian cheese you would use?",
+        question: 'If you were planning on making a pizza, what is the most common Italian cheese you would use?',
 
         a: 'A: American',
         b: 'B: Mozzerella',
@@ -159,7 +159,7 @@ const testQuestions = [
     },
 
     {
-        question: "What year was the Great Fire of London?",
+        question: 'What year was the Great Fire of London?',
 
         a: 'A: 1792',
         b: 'B: 1945',
@@ -170,7 +170,7 @@ const testQuestions = [
     },
 
     {
-        question: "What is a baby cat known as?",
+        question: 'What is a baby cat known as?',
 
         a: 'A: Kitten',
         b: 'B: Puppy',
@@ -192,7 +192,7 @@ const testQuestions = [
     },
 
     {
-        question: "What does the BBC stand for?",
+        question: 'What does the BBC stand for?',
 
         a: 'A: Best Books Champs',
         b: 'B: British Broadcasting Corporation',
@@ -203,7 +203,7 @@ const testQuestions = [
     },
 
     {
-        question: "In the movie Back to the Future Part II, who stole the Sports Almanac?",
+        question: 'In the movie Back to the Future Part II, who stole the Sports Almanac?',
 
         a: 'A: Biff Tannen',
         b: 'B: Needles',
@@ -214,7 +214,7 @@ const testQuestions = [
     },
 
     {
-        question: "What state has a noodle in its state capitals name?",
+        question: "What state has a noodle in its state capital's name?",
 
         a: 'A: Texas',
         b: 'B: Missouri',
@@ -225,7 +225,7 @@ const testQuestions = [
     },
 
     {
-        question: "What rock band wrote the song Rock of Ages?",
+        question: 'What rock band wrote the song Rock of Ages?',
 
         a: 'A: Rush',
         b: 'B: AC/DC',
@@ -236,7 +236,7 @@ const testQuestions = [
     },
 
     {
-        question: "What planet is known its Great Red Spot?",
+        question: 'What planet is known its Great Red Spot?',
 
         a: 'A: Saturn',
         b: 'B: Neptune',
@@ -247,7 +247,7 @@ const testQuestions = [
     },
 
     {
-        question: "In the classic series Doctor Who, who played the Forth Doctor?",
+        question: 'In the classic series Doctor Who, who played the Forth Doctor?',
 
         a: 'A: Tom Baker',
         b: 'B: Christopher Reeve',
@@ -291,7 +291,7 @@ const testQuestions = [
     },
 
     {
-        question: "What most common fruit is mistaken for a nut?",
+        question: 'What most common fruit is mistaken for a nut?',
 
         a: 'A: Almond',
         b: 'B: Peanut',
@@ -313,7 +313,7 @@ const testQuestions = [
     },
 
     {
-        question: "Which plant was the first to be cultivated in space?",
+        question: 'Which plant was the first to be cultivated in space?',
 
         a: 'A: Carrot',
         b: 'B: Potato',
@@ -324,7 +324,7 @@ const testQuestions = [
     },
 
     {
-        question: "What is the main ingredient in ice cream?",
+        question: 'What is the main ingredient in ice cream?',
 
         a: 'A: Milk',
         b: 'B: Cream',
@@ -335,7 +335,7 @@ const testQuestions = [
     },
 
     {
-        question: "The character Simba and Nala appear in what movie?",
+        question: 'The character Simba and Nala appear in what movie?',
 
         a: 'A: Peter Pan',
         b: 'B: The Lion King',
@@ -357,7 +357,7 @@ const testQuestions = [
     },
 
     {
-        question: "What establishment has a lower acceptance rate than Harvard?",
+        question: 'What establishment has a lower acceptance rate than Harvard?',
 
         a: 'A: Walmart',
         b: 'B: Six Flags',
@@ -368,7 +368,7 @@ const testQuestions = [
     },
 
     {
-        question: "What is the official nickname of Texas?",
+        question: 'What is the official nickname of Texas?',
 
         a: 'A: The Show Me State',
         b: 'B: The Lone Star State',
@@ -379,7 +379,7 @@ const testQuestions = [
     },
 
     {
-        question: "What video game company released Donkey Kong?",
+        question: 'What video game company released Donkey Kong?',
 
         a: 'A: Nintendo',
         b: 'B: X-Box',
@@ -390,7 +390,7 @@ const testQuestions = [
     },
 
     {
-        question: "What company invented the Speak and Spell",
+        question: 'What company invented the Speak and Spell',
 
         a: 'A: Texas Instruments',
         b: 'B: Nintendo',
@@ -399,8 +399,6 @@ const testQuestions = [
 
         correct: 'A: Texas Instruments'
     },
-
-
 ];
 
 const openingAudio = new Audio('./audio/opening.mp3');
@@ -457,19 +455,38 @@ function handleChoice(event) {
     if (choice == correctAnswer) {
         score = winnings[count]
         count++;
-        winningsDisplay.innerHTML = `Level: $${score}`
-        showAnswerEl.textContent = `Yes, the correct answer is ${correctAnswer}`
-        nextQuestion();
+        function pause(milliseconds) {
+            return new Promise(resolve => setTimeout(resolve, milliseconds));
+        }
+
+        async function executeAfterPause() {
+            await pause(1000);
+            winningsDisplay.innerHTML = `Level: $${score}`;
+            showAnswerEl.textContent = `Yes, the correct answer is ${correctAnswer}`;
+            nextQuestion();
+        }
+
+        executeAfterPause();
 
         if (score === 1000000) {
             guarenteedWinnings = 1000000
-            endGame(guarenteedWinnings);
+            function pause(milliseconds) {
+                return new Promise(resolve => setTimeout(resolve, milliseconds));
+            }
+
+            async function executeAfterPause() {
+                await pause(10000);
+                endGame(guarenteedWinnings)
+            }
+
+            executeAfterPause();
             return
         };
     }
 
     else {
         wrongAnswer.play();
+        inGameMusic.pause()
         showAnswerEl.textContent = `No, the correct answer was ${correctAnswer}`
 
         if (score >= 32000) {
