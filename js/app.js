@@ -126,7 +126,7 @@ function handleChoice(event) {
         nextQuestion();
 
         if (score === 1000000) {
-            guarenteedWinnings = 1000000    
+            guarenteedWinnings = 1000000
             endGame(guarenteedWinnings);
         };
     }
@@ -141,7 +141,7 @@ function handleChoice(event) {
             guarenteedWinnings = 1000;
         };
         //Displays final score after game ends
-        endGame(guarenteedWinnings)   
+        endGame(guarenteedWinnings)
     };
 }
 
@@ -181,5 +181,9 @@ startBtn.addEventListener("click", () => {
 });
 
 resetBtnEl.addEventListener('click', () => {
+    score = 0;
+    count = 0;
+    currentQuestion;
+    guarenteedWinnings = 0;
     init();
 });
