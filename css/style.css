@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
     background: linear-gradient(158deg, rgb(3, 24, 33), rgb(21, 135, 170));
     color: rgb(255, 255, 255);
     border: 2px solid rgb(242, 239, 245);
-    cursor: pointer;     
+    cursor: pointer;
 }
 
 h1 {
@@ -182,14 +182,6 @@ h1 {
     margin: 5px 0px;
     font-size: 20px;
     color: white;
-} 
-
-#finalWinnings {
-    font-family: "Patua One", serif;
-    font-size: 20px;
-    color: rgb(255, 196, 0);
-    text-align: center;
-    margin-bottom: 25px;
 }
 
 #scoring {
@@ -207,17 +199,36 @@ h1 {
 }
 
 #resultsMessage {
-    display: flex;
-    font-size: 120px;
-    width: 1900px;
-    height: 1000px;
+    font-family: "Patua One", serif;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 160px;
+    width: 1920px;
+    height: 1080px;
+    color: rgb(233, 196, 13);
     background: linear-gradient(184deg, #4e0de6, #020011);
 }
 
+#reset {
+    position: absolute;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+    width: 300px;
+    height: 50px;
+    top: 50%;
+    left: 42%;
+    border-radius: 25px;
+    background: linear-gradient(158deg, rgb(3, 24, 33), rgb(21, 135, 170));
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(242, 239, 245);
+    cursor: pointer;
+}
 
+#reset:hover {
+    background: linear-gradient(158deg, rgb(66, 43, 14), rgb(221, 99, 5));
 
-/* <div id="resultsScreen">
-<h1 id="resultsMessage">Test Content</h1>
-<p id="resultsDetails"></p>
-</div> */
-
+}

@@ -66,6 +66,7 @@ const openingAudio = new Audio('./audio/opening.mp3');
 const wrongAnswer = new Audio('./audio/wrongAnswer.mp3');
 const correctAnswer = new Audio('./audio/correctAnswer.mp3');
 const inGameMusic = new Audio('./audio/gameMusic.mp3')
+
 /*-------------------------------- Variables --------------------------------*/
 
 let score = 0;
@@ -87,12 +88,10 @@ const answersA = document.getElementById('answerA');
 const answersB = document.getElementById('answerB');
 const answersC = document.getElementById('answerC');
 const answersD = document.getElementById('answerD');
-
+const resetBtnEl = document.getElementById('reset');
 
 
 /*-------------------------------- Functions --------------------------------*/
-
-
 
 function questionAnswer() {
     let random;
@@ -124,10 +123,11 @@ function handleChoice(event) {
         score = winnings[count]
         count++;
         winningsDisplay.innerHTML = `Level: $${score}`
-        if (score !== 1000000) {
-            nextQuestion();
-        } else {
-            endGame();
+        nextQuestion();
+
+        if (score === 1000000) {
+            guarenteedWinnings = 1000000    
+            endGame(guarenteedWinnings);
         };
     }
 
@@ -143,7 +143,6 @@ function handleChoice(event) {
         //Displays final score after game ends
         endGame(guarenteedWinnings)   
     };
-
 }
 
 function endGame(guarenteedWinnings) {
@@ -160,6 +159,8 @@ function nextQuestion() {
 }
 
 function init() {
+    endGameScreen.style.display = "flex";
+    endGameMessage.style.display = "none";
     openingAudio.play();
     inGameMusic.play();
     currentQuestion = questionAnswer();
@@ -176,5 +177,9 @@ answersC.addEventListener('click', handleChoice);
 answersD.addEventListener('click', handleChoice);
 
 startBtn.addEventListener("click", () => {
+    init();
+});
+
+resetBtnEl.addEventListener('click', () => {
     init();
 });
