@@ -29,6 +29,7 @@ image credit: https://logos.fandom.com/wiki/Who_Wants_to_Be_a_Millionaire%3F_(UK
 
 audio files from: https://www.soundboard.com/sb/whowantstobeamillionairefull
 
+**To test out the game click the following link:**
 https://jerryspann1970.github.io/Project1-quiz-game/
 
 ![Who wants to be a millionaire](https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000032694/16b95b875867f950c2ef5a952dfdcf8c21755b34e6cd43cb98e916e087d1ac03)
