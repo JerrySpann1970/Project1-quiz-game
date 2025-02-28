@@ -10,6 +10,8 @@ This is a simple ***family oriented version*** that everyone can play reguardles
 
 **Script:**  I used a large array of quesitons, answer choices, and a correct choice object that was randomly chosen and assigned to the neccesary variables. I used logic to determine when a question was answered correctly are incorrectly.  If someone by chance answered wrong the game would stop, show the correct answer and after a pause would show their winnings and an option to play again.
 
+**Next Steps:** In the future, I would like to add some ***LifeLines*** and a ***Walk Away Button***.  Also another challenge would be to add ***three levels of question difficulties*** and finally to ***highlight each money amount in the money ladder.***
+
 **Works Cited:**
 
 I googled how to set a pause in my code and ***Co-Pilot*** came up with the following block of code.
