@@ -14,7 +14,8 @@ This is a simple ***family oriented version*** that everyone can play reguardles
 
 I googled how to set a pause in my code and ***Co-Pilot*** came up with the following block of code.
 
-```function pause(milliseconds) {
+```
+function pause(milliseconds) {
   return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
 
